@@ -1,0 +1,60 @@
+@import './function.scss';
+@import './box.scss';
+@import './nav.scss';
+@import './mixin/index.scss';
+@import './iconfont.scss';
+html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    font-family: 微软雅黑, 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.freezer-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.4s;
+}
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0;
+}
+
+// .el-menu-vertical-demo {
+//     background-color: #fff;
+//     .iconfont {
+//         margin-right: 4px;
+//         color: #00c67c;
+//     }
+//     .el-menu-item,
+//     .el-submenu__title {
+//         color: #84878D;
+//     }
+//     li {
+//         height: 40px;
+//         line-height: 40px;
+//         padding: 0px 5px 0px 27px !important;
+//         font-size: 12px;
+//     }
+//     .el-menu-item.is-active {
+//         .iconfont {
+//             color: #fff;
+//         }
+//         background: #00c67c;
+//         color: #fff;
+//     }
+// }
