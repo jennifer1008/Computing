@@ -1,7 +1,7 @@
 <template>
 	<aside>
 	<h1 style="padding-left:20px;margin-top:20px;">条件输入</h1>
-    <i-form :model="formItem" label-position="left" :label-width="50" style="padding:20px 10px 0 20px;">
+    <i-form :model="formItem" label-position="left" :label-width="55" style="padding:20px 10px 0 20px;">
         <Form-item label="制冷剂">
             <Select v-model="formItem.Cryogen">
                 <Option value="beijing">New York</Option>
@@ -23,15 +23,18 @@
                 <Option value="shenzhen">Sydney</Option>
             </Select>
         </Form-item>
-        <Form-item label="输入值">
-        	<i-input :value.sync="formItem.input3" style="width:40px;"></i-input>
-        	<Select v-model="formItem.Cryogen" style="width:60px;">
+        <Form-item label="输入值1">
+        	<i-input :value.sync="formItem.input3" style="width:130px;"></i-input>
+        	<Select v-model="formItem.Cryogen" style="width:80px;">
                 <Option value="beijing">New York</Option>
                 <Option value="shanghai">London</Option>
                 <Option value="shenzhen">Sydney</Option>
             </Select>
-            <i-input :value.sync="formItem.input3" style="width:40px;"></i-input>
-        	<Select v-model="formItem.Cryogen" style="width:60px;">
+            
+        </Form-item>
+        <Form-item label="输入值2">
+        	<i-input :value.sync="formItem.input3" style="width:130px;"></i-input>
+        	<Select v-model="formItem.Cryogen" style="width:80px;">
                 <Option value="beijing">New York</Option>
                 <Option value="shanghai">London</Option>
                 <Option value="shenzhen">Sydney</Option>

@@ -39,59 +39,75 @@ export default {
               },
               {
                   title: 'NO.',
-                  type:"index"
+                  type:"index",
+                  width:50,
+                  align:'center',
+                  className:'SerialNumber'
               },
               {
                   title: 'Style',
                   key: 'age',
+                  align:'center',
               },
               {
                   title: 'Fluid',
                   key: 'age',
+                  align:'center',
               },
               {
                   title: 'Phase',
                   key: 'age',
+                  align:'center',
               },
               {
                   title: 'T Temperature',
                   key: 'age',
+                  align:'center',
               },
               {
                   title: 'P Pressure',
                   key: 'age',
+                  align:'center',
               },
               {
                   title: 'D[kg/m3] Density',
                   key: 'age',
+                  align:'center',
               },
               {
                   title: ' v[m³/kg] Specific volume',
                   key: 'age',
+                  align:'center',
               },
               {
                   title: 'H [J/kg] Enthalpy',
                   key: 'age',
+                  align:'center',
               },
               {
                   title: 'S[J/kg/K] Entropy',
                   key: 'age',
+                  align:'center',
               },
               {
                   title: 'O[J/kg] Specific heat at constant volume',
                   key: 'age',
+                  align:'center',
               },
                {
                   title: 'C[J/kg] Specific heat at constant pressure',
                   key: 'age',
+                  align:'center',
               },
                {
                   title: 'U[J/kg] Internal energy',
                   key: 'age',
+                  align:'center',
               },
               {
                   title: 'V[Pa-s] Dynamic viscosity',
                   key: 'age',
+                  align:'center',
               },
               {
                   title: '操作',
@@ -199,7 +215,12 @@ export default {
     }
     
   }
-   
+   .SerialNumber{
+    padding:0;
+    .ivu-table-cell{
+      padding:0;
+    }
+   }
 }
 </style>
 
