@@ -17,22 +17,22 @@ import './utils/convertToBase64.js';
 // import VueCropper from 'vue-cropper';
 
 Vue.config.productionTip = false;
-router.beforeEach((to, from, next) => {
-    // 导航钩子，全局钩子
-    if (to.path == '/login') {
-        accountHelp.removeUserInfo();
-    }
-    let user = accountHelp.getUserInfo();
-    if (!user) {
-        if (to.name != 'Login' && to.name != 'Register' && to.name != 'ForgetPassword') {
-            !!user ? next() : next('/login');
-        } else {
-            next();
-        }
-    } else {
-        next();
-    }
-})
+// router.beforeEach((to, from, next) => {
+//     // 导航钩子，全局钩子
+//     if (to.path == '/login') {
+//         accountHelp.removeUserInfo();
+//     }
+//     let user = accountHelp.getUserInfo();
+//     if (!user) {
+//         if (to.name != 'Login' && to.name != 'Register' && to.name != 'ForgetPassword') {
+//             !!user ? next() : next('/login');
+//         } else {
+//             next();
+//         }
+//     } else {
+//         next();
+//     }
+// })
 
 new Vue({
     el: '#app',

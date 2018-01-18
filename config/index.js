@@ -31,7 +31,7 @@ module.exports = {
         proxyTable: {
             '/api': {
                 // target: 'https://i.cloudhvacr.com',
-                target: 'http://pctest.cloudhvacr.com',
+                target: 'https://calc.cloudhvacr.com',
                 changeOrigin: true,
                 pathRewrite: {
                     '^/api': '/'

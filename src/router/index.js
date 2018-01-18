@@ -7,7 +7,7 @@ import Layout1 from '../layout/layout-1/index.vue';
 Vue.use(Router);
 // 按需加载
 const output = resolve => require(['../modules/output/index.vue'], resolve);
-const Login = resolve => require(['../modules/account/login/index.vue'], resolve);
+
 const NotFound = resolve => require(['../modules/otherModules/404/index.vue'], resolve);
 
 export default new Router({

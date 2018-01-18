@@ -1,61 +1,27 @@
 import fetch from '../utils/fetch';
 export default {
-    login: function(data) {
+    purefluids: function(data) {
         return fetch({
-            url: '/useradmin/Login/TokenLogin',
+            url: '/v1/purefluids',
             method: 'post',
             data: data
         });
     },
-    RegisterPersonal:function (data) {
-    	return fetch({
-            url: '/UserAdmin/Register/RegisterPersonalData',
-            method: 'post',
-            data: data
-        });
-    },
-    RegisterEnterprise:function (data) {
+    mixfluids: function(data) {
         return fetch({
-            url: '/Useradmin/Register/RegisterEnterpriseData',
+            url: '/v1/mixfluids',
             method: 'post',
             data: data
         });
     },
-    //验证码
-    phoneCode:function(data){
-    	return fetch({
-            url: '/UserAdmin/Register/SendYZM',
-            method: 'post',
-            data: data
-        });
-    },
-    //企业类型
-    EnterpriseType:function(data){
-    	return fetch({
-            url: '/UserAdmin/Register/EnterpriseTypeList',
-            method: 'post',
-            data: data
-        });
-    	
-    },
-    //找回密码
-  retrieveVerifyCode:function (data) {
-    return fetch({
-      url: `/useradmin/Register/RetrievePasswordDataSendMsg?tel=${data.tel}&type=${data.type}`,
-      method: 'post',
-    });
-  },
-  retrievePasswordData:function (data) {
-    return fetch({
-      url: `/useradmin/Register/RetrievePasswordData?tel=${data.tel}&UserPass=${data.UserPass}&VerificationCode=${data.VerificationCode}&type=${data.type}&userName=${data.userName}`,
-      method: 'post',
-    });
-  },
-    GetUserInfo:function(data){
-    	return fetch({
-            url: '/userAdmin/Register/GetEnterpriseInfo',
-            method: 'post',
-            data: data
+    //点状态查询
+    pointstate: function(url) {
+        return fetch({
+            url:url,
+            // url: `/v1/pointstate?T=${data.T}&P=${data.P}&fluids=${data.fluids}`,
+            method: 'get'
         });
     }
+    
+   
 };
